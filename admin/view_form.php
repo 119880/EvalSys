@@ -46,6 +46,8 @@ $user = (object) $response->fetch_assoc();
                     <span class="text">User Information</span>
                 </div>
                 <a href="/admin/studyload.php?id=<?php echo $user->user_id; ?>" class="btn btn-dark mb-2">Study Load</a>
+                <a href="/admin/add_edp.php" class="btn btn-dark mb-2">Add EDP</a>
+                <a href="/admin/add_subject.php" class="btn btn-dark mb-2">Add Subject</a>
                 <div class="row g-3">
                     <div class="col-md-4">
                         <label for="fnameField" class="form-label">First Name</label>

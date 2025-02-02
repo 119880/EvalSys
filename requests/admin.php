@@ -606,7 +606,7 @@ function edp_info($id)
 function delete_edp($data)
 {
     try {
-        $query = "UPDATE `edp` SET status='0' WHERE id='".mysqli_real_escape_string($GLOBALS['conn'], $data->id)."'";
+        $query = "UPDATE `edp` SET status='0' WHERE edp_code='".mysqli_real_escape_string($GLOBALS['conn'], $data->id)."'";
 
         if ($GLOBALS['conn']->query($query))
         {

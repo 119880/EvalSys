@@ -68,7 +68,7 @@ if ($method == "POST")
                 data = JSON.parse(e);
                 if (data.code == 200) {
                     alert("Success!");   
-                    location.reload();
+                    window.history.go(-2);
                     return;
                 }
 

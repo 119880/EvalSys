@@ -29,7 +29,7 @@ if ($method == "POST")
                     <span class="text">EDP</span>
                 </div>
                 <a href="/admin/add_edp.php" class="btn btn-dark acc-delete">Add EDP</a>
-                <table id="accountTable" class="display">
+                <table id="accountTable" class="table-main">
                     <thead>
                         <tr>
                             <th>Code</th>

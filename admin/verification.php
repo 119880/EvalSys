@@ -28,7 +28,7 @@ if ($method == "POST")
                     <i class="uil uil-user"></i>
                     <span class="text">User Verification</span>
                 </div>
-                <table id="accountTable" class="display">
+                <table id="accountTable" class="table-main">
                     <thead>
                         <tr>
                             <th>Form ID</th>

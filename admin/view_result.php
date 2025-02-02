@@ -48,7 +48,7 @@ $info = (object) $response->info->fetch_assoc();
                     <span class="text"><?php echo ($_GET['type'] == "Teacher")? $info->edp_code . " (" . $info->name . ") " . $info->fname . " " . $info->lname : $info->fname . " " . $info->lname;?>'s Evaluation Results</span>
                 </div>
                 <div class="mt-3">
-                    <table data-page-length='25' id="accountTable" class="display">
+                    <table data-page-length='25' id="accountTable" class="table-main">
                         <thead>
                             <tr>
                                 <th>Skills</th>

@@ -29,7 +29,7 @@ if ($method == "POST")
                     <span class="text">Admins</span>
                 </div>
                 <a href="/admin/add_admin.php" class="btn btn-dark">Add Admin</a>
-                <table id="accountTable" class="display">
+                <table id="accountTable" class="table-main">
                     <thead>
                         <tr>
                             <th>ID</th>

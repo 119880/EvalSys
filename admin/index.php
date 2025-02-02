@@ -44,7 +44,7 @@ $history = get_recent();
                     <span class="text">Recent Activity</span>
                 </div>
 
-                <table data-order='[[ 0, "desc" ]]' id="accountTable" class="display">
+                <table data-order='[[ 0, "desc" ]]' id="accountTable" class="table-main">
                     <thead>
                         <tr>
                             <th>Date Submitted</th>

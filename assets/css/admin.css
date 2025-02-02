@@ -18,6 +18,8 @@
     --box2-color: #FFE6AC;
     --box3-color: #E7D1FC;
     --title-icon-color: #fff;
+    --table-head-color: #F9FBFC;
+    --panel2-color: #f9f9f9;
     
     /* ====== Transition ====== */
     --tran-05: all 0.5s ease;
@@ -28,8 +30,8 @@
 body{
     min-height: 100vh;
     margin: 0;
-    background-color: var(--primary-color);
 }
+
 body.dark{
     --primary-color: #3A3B3C;
     --panel-color: #242526;
@@ -41,7 +43,10 @@ body.dark{
     --box2-color: #3A3B3C;
     --box3-color: #3A3B3C;
     --title-icon-color: #CCC;
+    --table-head-color: #333;
+    --panel2-color: #3C4042;
 }
+
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
     width: 8px;
@@ -81,7 +86,7 @@ ol, ul {
 } 
 
 nav.close{
-    width: 73px;
+    width: 80px;
 }
 nav .logo-name{
     display: flex;
@@ -90,12 +95,12 @@ nav .logo-name{
 nav .logo-image{
     display: flex;
     justify-content: center;
-    min-width: 45px;
 }
 nav .logo-image img{
     width: 40px;
+    height: 40px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 nav .logo-name .logo_name{
@@ -165,6 +170,23 @@ body.dark .nav-links li a:hover i,
 body.dark .nav-links li a:hover .link-name{
     color: var(--text-color);
 }
+
+.nav-links a.active {
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+}
+
+.nav-links a.active .link-name,
+.nav-links a.active i {
+    color: white;
+}
+
+.nav-links a.active:hover i,
+.nav-links a.active:hover .link-name {
+    color: white;
+}
+
 .menu-items .logout-mode{
     padding-top: 10px;
     border-top: 1px solid var(--border-color);
@@ -192,6 +214,8 @@ body.dark .nav-links li a:hover .link-name{
     border-radius: 25px;
     background-color: var(--toggle-color);
 }
+
+
 .switch:before{
     content: "";
     position: absolute;
@@ -211,16 +235,18 @@ body.dark .switch:before{
 .dashboard{
     position: relative;
     left: 250px;
-    background-color: var(--panel-color);
+    background-color: var(--panel2-color);
     min-height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 14px;
     transition: var(--tran-05);
 }
+
 nav.close ~ .dashboard{
     left: 73px;
     width: calc(100% - 73px);
 }
+
 .dashboard .top{
     position: fixed;
     top: 0;
@@ -366,6 +392,7 @@ nav.close ~ .dashboard .top{
     color: var(--text-color);
 }
 
+
 @media (max-width: 1000px) {
     nav{
         width: 500px;
@@ -426,7 +453,7 @@ nav.close ~ .dashboard .top{
         width: 0px;
     }
     nav.close{
-        width: 73px;
+        width: 80px;
     }
     nav .logo_name{
         opacity: 0;
@@ -460,4 +487,34 @@ nav.close ~ .dashboard .top{
         left: 0;
         width: 100%;
     }
+}
+
+.table-main {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius */
+    border-spacing: 0; /* Remove spacing between cells */
+    margin: 20px 0;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    color: var(--text-color); /* Use CSS variable */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px var(--box-shadow-color);
+    border-radius: 10px; /* Apply border-radius to the table */
+    overflow: hidden; /* Ensure the border-radius is visible */
+}
+
+.table-main thead tr {
+    background-color: var(--table-head-color);
+    color: var(--text-color); /* Use CSS variable */
+    text-align: left;
+    font-weight: bold;
+}
+
+.dt-info {
+    color: var(--text-color) !important;
+}
+
+label {
+    color: var(--text-color);
 }

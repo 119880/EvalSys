@@ -66,7 +66,7 @@ if ($method == "POST")
                     <a href="#" id="enterBtn" class="btn btn-primary">Enter</a>
                 </div>
                 <div class="mt-5">
-                    <table data-order='[[ 0, "desc" ]]' id="accountTable" class="display">
+                    <table data-order='[[ 0, "desc" ]]' id="accountTable" class="table-main">
                         <thead>
                             <tr>
                                 <th>Date Updated</th>

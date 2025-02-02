@@ -40,7 +40,7 @@ $user = (object) $response->fetch_assoc();
                     <span class="text"><?php echo "(".$user->school_id.")".$user->fname." ".$user->lname."'s Study Load";?></span>
                 </div>
                 <a href="/admin/add_studyload.php?id=<?php echo $user->id ?>" class="btn btn-dark acc-delete">Add</a>
-                <table id="accountTable" class="display">
+                <table id="accountTable" class="table-main">
                     <thead>
                         <tr>
                             <th>EDP Code</th>

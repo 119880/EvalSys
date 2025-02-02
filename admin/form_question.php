@@ -52,7 +52,7 @@ if (isset($_GET['type']))
                 </div>
                 <div class="mt-5">
                 <?php echo (empty($type))? '' : '<a href="/admin/add_question.php?type='.$type.'" class="btn btn-dark acc-delete">Add Question</a>';?>
-                    <table id="accountTable" class="display">
+                    <table id="accountTable" class="table-main">
                         <thead>
                             <tr>
                                 <th>ID</th>

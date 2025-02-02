@@ -28,9 +28,9 @@ if ($method == "POST")
                     <i class="uil uil-user"></i>
                     <span class="text">Teachers</span>
                 </div>
-                <a href="/admin/add_teacher.php" class="btn btn-dark acc-delete">Add Teacher</a>
-                <table id="accountTable" class="display">
-                    <thead>
+                <a href="/admin/add_teacher.php" class="btn btn-primary acc-delete">Add Teacher</a>
+                <table id="accountTable" class="table-main">
+                    <thead class="table-head">
                         <tr>
                             <th>ID</th>
                             <th>Full Name</th>
@@ -49,8 +49,8 @@ if ($method == "POST")
                                 <td>'.$user["fname"].' '.$user["lname"].'</td>
                                 <td>'.$user["acronym"].'</td>
                                 <td>
-                                    <a href="/admin/view_teacher.php?id='.$user["id"].'" class="btn btn-dark">Edit</a>
-                                    <button type="button" class="btn btn-dark acc-delete" data-bs-toggle="modal" data-bs-target="#deleteBtn">Delete</button>
+                                    <a href="/admin/view_teacher.php?id='.$user["id"].'" class="btn btn-warning">Edit</a>
+                                    <button type="button" class="btn btn-danger acc-delete" data-bs-toggle="modal" data-bs-target="#deleteBtn">Delete</button>
                                 </td>
                                 </tr>';
                             }

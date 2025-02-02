@@ -33,14 +33,6 @@
                 <i class="uil uil-document-info"></i>
                 <span class="link-name">Verification</span>
             </a></li>
-            <li><a href="/admin/edp.php">
-                <i class="uil uil-document-info"></i>
-                <span class="link-name">EDP</span>
-            </a></li>
-            <li><a href="/admin/subjects.php">
-                <i class="uil uil-document-info"></i>
-                <span class="link-name">Subjects</span>
-            </a></li>
             <li><a href="/admin/form_question.php">
                 <i class="uil uil-document-info"></i>
             <span class="link-name">Form Question</span>
